@@ -17,6 +17,9 @@ BANNED=[r'9\s*[:：]\s*16',r'竖屏教学',r'开头\s*\d+\s*秒',
         r'\d+\s*秒钩子',r'抓住数学矛盾',r'原题重排',r'新增推导',
         r'答案揭晓',r'互动挑战',r'用于剪映',r'口播脚本']
 FONT='Noto Sans CJK SC'
+# The illustration intentionally agrees with the mathematical example:
+# A = 45°, B = arctan(2), C = arctan(3), rather than an arbitrary triangle.
+TRIANGLE_VERTICES = {'A': (2.0, 7.07), 'B': (4.7, 7.07), 'C': (3.8, 5.27)}
 
 def rgb(s): return RGBColor.from_string(s)
 def textbox(slide,value,x,y,w,h,size=22,color=WHITE,bold=False,center=False):
@@ -72,14 +75,19 @@ def draw_slide(slide,d,index,total,series):
     if d.get('secondary'):lines=[d['secondary']]+list(lines)
     if typ=='triangle':
         box(slide,.53,5.17,5.95,2.3,PANEL)
-        line(slide,1.17,7.07,5.71,7.07,LIME)
-        line(slide,1.17,7.07,4.20,5.34,ORANGE)
-        line(slide,4.20,5.34,5.71,7.07,CYAN)
-        textbox(slide,'A',.83,7.04,.4,.36,17,ORANGE,True)
-        textbox(slide,'B',5.75,7.04,.4,.36,17,CYAN,True)
-        textbox(slide,'C',4.22,5.10,.4,.36,17,LIME,True)
+        # Geometrically faithful example: tan(A)=1, tan(B)=2.
+        # A=(2.0,7.07), C=(3.8,5.27), B=(4.7,7.07).
+        ax,ay=TRIANGLE_VERTICES['A']
+        bx,by=TRIANGLE_VERTICES['B']
+        cx,cy=TRIANGLE_VERTICES['C']
+        line(slide,ax,ay,bx,by,LIME)
+        line(slide,ax,ay,cx,cy,ORANGE)
+        line(slide,cx,cy,bx,by,CYAN)
+        textbox(slide,'A',ax-.40,ay-.05,.4,.36,17,ORANGE,True)
+        textbox(slide,'B',bx+.08,by-.05,.4,.36,17,CYAN,True)
+        textbox(slide,'C',cx-.16,cy-.25,.4,.36,17,LIME,True)
         if d.get('angle_label'):
-            textbox(slide,d['angle_label'],1.43,6.49,1,.35,16,ORANGE,True)
+            textbox(slide,d['angle_label'],ax+.30,ay-.55,1,.35,16,ORANGE,True)
         y=7.67
     else:
         y=5.55 if formula else 3.77

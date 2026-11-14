@@ -27,7 +27,8 @@ def make_concat(timeline, slides_dir, path):
         file=(Path(slides_dir)/image).resolve()
         if not file.is_file():
             raise FileNotFoundError(f'Missing PNG: {file}')
-        quoted=str(file).replace("'", "'\''")
+        # FFconcat single-quoted path escape: ' -> '\\''
+        quoted=str(file).replace("'", chr(39)+chr(92)+chr(39)+chr(39))
         lines.append(f"file '{quoted}'")
         lines.append(f"duration {(end-start)/1000:.6f}")
         last=f"file '{quoted}'";prev=end
