@@ -37,3 +37,20 @@ python scripts/assemble_video.py --timeline aligned/timeline.json \\
 ```
 
 `assemble_video.py` 只接受已完成音频计时的时间轴；估算时间轴需要显式使用 `--allow-estimated`（仅用于草稿）。它还会检查音频总时长与时间轴误差是否超过300毫秒。SRT 不会烧录进视频，请在剪映中导入 `aligned/lesson.srt` 以便保持编辑能力。
+
+
+## 页码映射与零 GUI 视频合成
+
+脚本 `scripts/slide_map.py` 把 `timeline.json` 与 `lesson.srt` 交叉核对，输出每页 `start_ms/end_ms`、`cue_indices` 和 `captions[]`，同时写入 `srt_sha256`。每次配音时间轴校准后必须重新构建映射。
+
+```bash
+python scripts/render_course_video.py --pptx build/lesson.pptx \
+  --audio build/aligned/narration.wav --srt build/aligned/lesson.srt \
+  --slide-map build/aligned/slide_map.json --out build/lesson.mp4
+```
+
+该命令会检查 PPT 页数、字幕映射 SRT 哈希、真实音频总时长、每页连续时间，依次执行 PPT 离线渲染和 FFmpeg 视频编码。默认烧录字幕，另输出 sidecar SRT；如需在剪映中调整字幕，则加 `--no-burn-subtitles`。SRT 文字变动、页码不对应或时间轴尚为估算状态时拒绝生成正式成品。执行用的 Python 环境需要 `python-pptx`，并安装 `libreoffice`、`poppler-utils`、`ffmpeg`。
+
+## 不建议把 SRT 直接视为配音接口
+
+剪映/CapCut 的“导入字幕”与“文本朗读/文字转语音”是不同的编辑操作；能够在 GUI 使用不代表有一个可批量调用的官方 API。可编程 TTS 参考 `references/srt-tts-capcut-research.md`，建议让 `notes` 是中文数学自然朗读稿，配音后重新计算真实字幕时间。

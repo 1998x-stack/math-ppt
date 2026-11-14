@@ -26,3 +26,11 @@ python scripts/qa.py --input examples/tangent-integer-triangle/lesson.json --out
 上传真实配音后，建议按 SRT cue 顺序切分音频，调用 `python scripts/retime_tts.py --timeline build/timeline.json --cue-audio-dir audio/cues --out aligned --assemble`，使用 `aligned/lesson.srt`、`aligned/timeline.json` 和 `aligned/narration.wav` 合成视频；请勿将估算时间轴当作已经精确配音的结果。
 
 CI 的 `publish-example` 在主分支测试成功后提交 PPT/PDF/PNG 和对应文本，保留原始 `lesson.json` 作为唯一编辑源。
+
+
+## 字幕到 PPT 的可审计映射
+
+- [slide_map.json](slide_map.json)：20 页与 120 条 SRT 的精确映射，包含 `cue_to_page`、每页字幕列表和 SRT 哈希；
+- [tts_jobs.example.json](tts_jobs.example.json)：按字幕切分的语音任务清单；**此 JSON 不包含已生成音频**；
+- [VIDEO_WORKFLOW.md](VIDEO_WORKFLOW.md)：从 PPT + SRT + 音频到 MP4 的实际命令与边界；
+- 保持 [lesson.srt](lesson.srt) 和 [timeline.json](timeline.json) 的估算时码身份。真实配音产生后请另存 `aligned/`，不要覆盖原始历史。

@@ -20,7 +20,7 @@ jobs:
       - name: Install FFmpeg so audio tests run instead of being skipped
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg
+          sudo apt-get install -y -qq ffmpeg libreoffice-impress poppler-utils fonts-noto-cjk
       - run: python -m pytest -q -rs
       - name: Build editable PPT, captions and timeline
         run: |
@@ -34,6 +34,7 @@ jobs:
             build/lesson.srt
             build/voiceover.txt
             build/timeline.json
+            build/slide_map.json
 
   publish-example:
     name: Commit complete example assets to examples/
@@ -73,10 +74,13 @@ jobs:
           cp build/lesson.srt "$root/lesson.srt"
           cp build/voiceover.txt "$root/voiceover.txt"
           cp build/timeline.json "$root/timeline.json"
+          cp build/slide_map.json "$root/slide_map.json"
+          python scripts/srt_to_tts.py --srt build/lesson.srt --slide-map build/slide_map.json --out build/tts_jobs --dry-run
+          cp build/tts_jobs/tts_jobs.json "$root/tts_jobs.example.json"
           cp build/png/slide-*.png "$root/slides/"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -f "$root/lesson.pptx" "$root/lesson.pdf" "$root/lesson.srt" "$root/voiceover.txt" "$root/timeline.json" "$root/slides/"
+          git add -f "$root/lesson.pptx" "$root/lesson.pdf" "$root/lesson.srt" "$root/voiceover.txt" "$root/timeline.json" "$root/slide_map.json" "$root/tts_jobs.example.json" "$root/slides/"
           if ! git diff --cached --quiet; then
             git commit -m "build(examples): publish verified PPT PDF PNG SRT and timeline [skip ci]"
             git push origin HEAD:main

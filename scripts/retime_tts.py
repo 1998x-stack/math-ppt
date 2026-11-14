@@ -76,6 +76,8 @@ def main():
     (out/'timeline.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     (out/'lesson.srt').write_text('\n\n'.join(
         f"{c['index']}\n{clock(c['start_ms'])} --> {clock(c['end_ms'])}\n{c['text']}" for c in new_cues)+'\n',encoding='utf-8-sig')
+    from slide_map import create_map_file
+    create_map_file(out/'timeline.json',out/'lesson.srt',out/'slide_map.json')
     print(f"Retimed {len(new_cues)} cues, {len(new_pages)} slides, {now/1000:.2f}s")
     if not a.assemble:
         print('Audio not assembled: insert the exact configured pauses between clips.')

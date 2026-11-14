@@ -1,0 +1,967 @@
+{
+  "alignment": "requires_measured_audio",
+  "provider": "edge-tts-unofficial",
+  "total": 120,
+  "jobs": [
+    {
+      "cue_index": 1,
+      "page": 1,
+      "text": "这道题看起来是三个整数的求和问题，",
+      "file": "001.mp3",
+      "estimated_start_ms": 0,
+      "estimated_end_ms": 3400
+    },
+    {
+      "cue_index": 2,
+      "page": 1,
+      "text": "但绝对不能随便猜数。",
+      "file": "002.mp3",
+      "estimated_start_ms": 3400,
+      "estimated_end_ms": 5470
+    },
+    {
+      "cue_index": 3,
+      "page": 1,
+      "text": "因为这三个数分别来自一个三角形的三个内角，",
+      "file": "003.mp3",
+      "estimated_start_ms": 5470,
+      "estimated_end_ms": 9630
+    },
+    {
+      "cue_index": 4,
+      "page": 1,
+      "text": "我们要先利用内角和把它们限制住。",
+      "file": "004.mp3",
+      "estimated_start_ms": 9630,
+      "estimated_end_ms": 12840
+    },
+    {
+      "cue_index": 5,
+      "page": 2,
+      "text": "已知三角形 ABC 的三个内角是 A、B、C，",
+      "file": "005.mp3",
+      "estimated_start_ms": 13040,
+      "estimated_end_ms": 17010
+    },
+    {
+      "cue_index": 6,
+      "page": 2,
+      "text": "三个角的正切值都为整数。",
+      "file": "006.mp3",
+      "estimated_start_ms": 17010,
+      "estimated_end_ms": 19460
+    },
+    {
+      "cue_index": 7,
+      "page": 2,
+      "text": "要求这三个正切值的和。",
+      "file": "007.mp3",
+      "estimated_start_ms": 19460,
+      "estimated_end_ms": 21720
+    },
+    {
+      "cue_index": 8,
+      "page": 2,
+      "text": "注意，",
+      "file": "008.mp3",
+      "estimated_start_ms": 21720,
+      "estimated_end_ms": 23320
+    },
+    {
+      "cue_index": 9,
+      "page": 2,
+      "text": "既然题目说正切值为整数，",
+      "file": "009.mp3",
+      "estimated_start_ms": 23320,
+      "estimated_end_ms": 25770
+    },
+    {
+      "cue_index": 10,
+      "page": 2,
+      "text": "就意味着它们都必须有定义。",
+      "file": "010.mp3",
+      "estimated_start_ms": 25770,
+      "estimated_end_ms": 28410
+    },
+    {
+      "cue_index": 11,
+      "page": 3,
+      "text": "三个正切值求的是和，",
+      "file": "011.mp3",
+      "estimated_start_ms": 28610,
+      "estimated_end_ms": 30680
+    },
+    {
+      "cue_index": 12,
+      "page": 3,
+      "text": "交换 A、B、C 的名称并不改变结果。",
+      "file": "012.mp3",
+      "estimated_start_ms": 30680,
+      "estimated_end_ms": 34080
+    },
+    {
+      "cue_index": 13,
+      "page": 3,
+      "text": "所以我们不妨按照大小排列，",
+      "file": "013.mp3",
+      "estimated_start_ms": 34080,
+      "estimated_end_ms": 36720
+    },
+    {
+      "cue_index": 14,
+      "page": 3,
+      "text": "设 A 小于等于 B，",
+      "file": "014.mp3",
+      "estimated_start_ms": 36720,
+      "estimated_end_ms": 38410
+    },
+    {
+      "cue_index": 15,
+      "page": 3,
+      "text": "小于等于 C。",
+      "file": "015.mp3",
+      "estimated_start_ms": 38410,
+      "estimated_end_ms": 40010
+    },
+    {
+      "cue_index": 16,
+      "page": 3,
+      "text": "研究最小角往往比直接枚举整数容易。",
+      "file": "016.mp3",
+      "estimated_start_ms": 40010,
+      "estimated_end_ms": 43410
+    },
+    {
+      "cue_index": 17,
+      "page": 4,
+      "text": "为什么最小角 A 不超过六十度呢？",
+      "file": "017.mp3",
+      "estimated_start_ms": 43610,
+      "estimated_end_ms": 46630
+    },
+    {
+      "cue_index": 18,
+      "page": 4,
+      "text": "因为如果连最小角都大于六十度，",
+      "file": "018.mp3",
+      "estimated_start_ms": 46630,
+      "estimated_end_ms": 49650
+    },
+    {
+      "cue_index": 19,
+      "page": 4,
+      "text": "另外两个角只会更大，",
+      "file": "019.mp3",
+      "estimated_start_ms": 49650,
+      "estimated_end_ms": 51720
+    },
+    {
+      "cue_index": 20,
+      "page": 4,
+      "text": "三角形内角和就会超过一百八十度。",
+      "file": "020.mp3",
+      "estimated_start_ms": 51720,
+      "estimated_end_ms": 54930
+    },
+    {
+      "cue_index": 21,
+      "page": 4,
+      "text": "因此最小角 A 一定小于等于六十度。",
+      "file": "021.mp3",
+      "estimated_start_ms": 54930,
+      "estimated_end_ms": 58140
+    },
+    {
+      "cue_index": 22,
+      "page": 5,
+      "text": "A 是一个大于零且不超过六十度的锐角。",
+      "file": "022.mp3",
+      "estimated_start_ms": 58340,
+      "estimated_end_ms": 61930
+    },
+    {
+      "cue_index": 23,
+      "page": 5,
+      "text": "正切函数在锐角区间内严格递增，",
+      "file": "023.mp3",
+      "estimated_start_ms": 61930,
+      "estimated_end_ms": 64950
+    },
+    {
+      "cue_index": 24,
+      "page": 5,
+      "text": "所以 tan A 大于零，",
+      "file": "024.mp3",
+      "estimated_start_ms": 64950,
+      "estimated_end_ms": 67020
+    },
+    {
+      "cue_index": 25,
+      "page": 5,
+      "text": "同时不超过 tan 六十度，",
+      "file": "025.mp3",
+      "estimated_start_ms": 67020,
+      "estimated_end_ms": 69470
+    },
+    {
+      "cue_index": 26,
+      "page": 5,
+      "text": "也就是根号三。",
+      "file": "026.mp3",
+      "estimated_start_ms": 69470,
+      "estimated_end_ms": 71070
+    },
+    {
+      "cue_index": 27,
+      "page": 5,
+      "text": "根号三小于二。",
+      "file": "027.mp3",
+      "estimated_start_ms": 71070,
+      "estimated_end_ms": 72670
+    },
+    {
+      "cue_index": 28,
+      "page": 6,
+      "text": "现在同时知道 tan A 是正整数，",
+      "file": "028.mp3",
+      "estimated_start_ms": 72870,
+      "estimated_end_ms": 75890
+    },
+    {
+      "cue_index": 29,
+      "page": 6,
+      "text": "并且严格小于二。",
+      "file": "029.mp3",
+      "estimated_start_ms": 75890,
+      "estimated_end_ms": 77580
+    },
+    {
+      "cue_index": 30,
+      "page": 6,
+      "text": "这样的整数只有一，",
+      "file": "030.mp3",
+      "estimated_start_ms": 77580,
+      "estimated_end_ms": 79460
+    },
+    {
+      "cue_index": 31,
+      "page": 6,
+      "text": "所以 tan A 必须等于一。",
+      "file": "031.mp3",
+      "estimated_start_ms": 79460,
+      "estimated_end_ms": 81910
+    },
+    {
+      "cue_index": 32,
+      "page": 6,
+      "text": "因为 A 在锐角范围内，",
+      "file": "032.mp3",
+      "estimated_start_ms": 81910,
+      "estimated_end_ms": 83980
+    },
+    {
+      "cue_index": 33,
+      "page": 6,
+      "text": "正切等于一对应四十五度，",
+      "file": "033.mp3",
+      "estimated_start_ms": 83980,
+      "estimated_end_ms": 86430
+    },
+    {
+      "cue_index": 34,
+      "page": 6,
+      "text": "于是 A 等于四十五度。",
+      "file": "034.mp3",
+      "estimated_start_ms": 86430,
+      "estimated_end_ms": 88500
+    },
+    {
+      "cue_index": 35,
+      "page": 7,
+      "text": "已经知道 A 是四十五度。",
+      "file": "035.mp3",
+      "estimated_start_ms": 88700,
+      "estimated_end_ms": 90960
+    },
+    {
+      "cue_index": 36,
+      "page": 7,
+      "text": "根据三角形内角和，",
+      "file": "036.mp3",
+      "estimated_start_ms": 90960,
+      "estimated_end_ms": 92840
+    },
+    {
+      "cue_index": 37,
+      "page": 7,
+      "text": "另外两个角 B 与 C 的和，",
+      "file": "037.mp3",
+      "estimated_start_ms": 92840,
+      "estimated_end_ms": 95100
+    },
+    {
+      "cue_index": 38,
+      "page": 7,
+      "text": "就是一百八十度减四十五度，",
+      "file": "038.mp3",
+      "estimated_start_ms": 95100,
+      "estimated_end_ms": 97740
+    },
+    {
+      "cue_index": 39,
+      "page": 7,
+      "text": "等于一百三十五度。",
+      "file": "039.mp3",
+      "estimated_start_ms": 97740,
+      "estimated_end_ms": 99620
+    },
+    {
+      "cue_index": 40,
+      "page": 7,
+      "text": "这给后面的正切和角公式提供了条件。",
+      "file": "040.mp3",
+      "estimated_start_ms": 99620,
+      "estimated_end_ms": 103020
+    },
+    {
+      "cue_index": 41,
+      "page": 8,
+      "text": "这里不能直接默认 B 和 C 是锐角。",
+      "file": "041.mp3",
+      "estimated_start_ms": 103220,
+      "estimated_end_ms": 106240
+    },
+    {
+      "cue_index": 42,
+      "page": 8,
+      "text": "若 C 大于九十度，",
+      "file": "042.mp3",
+      "estimated_start_ms": 106240,
+      "estimated_end_ms": 107930
+    },
+    {
+      "cue_index": 43,
+      "page": 8,
+      "text": "而 A、B 均不小于四十五度，",
+      "file": "043.mp3",
+      "estimated_start_ms": 107930,
+      "estimated_end_ms": 110570
+    },
+    {
+      "cue_index": 44,
+      "page": 8,
+      "text": "则内角和超过一百八十度；",
+      "file": "044.mp3",
+      "estimated_start_ms": 110570,
+      "estimated_end_ms": 113020
+    },
+    {
+      "cue_index": 45,
+      "page": 8,
+      "text": "若 C 等于九十度，",
+      "file": "045.mp3",
+      "estimated_start_ms": 113020,
+      "estimated_end_ms": 114710
+    },
+    {
+      "cue_index": 46,
+      "page": 8,
+      "text": "tan C 没有定义。",
+      "file": "046.mp3",
+      "estimated_start_ms": 114710,
+      "estimated_end_ms": 116590
+    },
+    {
+      "cue_index": 47,
+      "page": 8,
+      "text": "两种情况都不允许。",
+      "file": "047.mp3",
+      "estimated_start_ms": 116590,
+      "estimated_end_ms": 118470
+    },
+    {
+      "cue_index": 48,
+      "page": 8,
+      "text": "所以 B、C 必须是锐角。",
+      "file": "048.mp3",
+      "estimated_start_ms": 118470,
+      "estimated_end_ms": 120730
+    },
+    {
+      "cue_index": 49,
+      "page": 9,
+      "text": "现在把 tan B 记为 b，",
+      "file": "049.mp3",
+      "estimated_start_ms": 120930,
+      "estimated_end_ms": 123190
+    },
+    {
+      "cue_index": 50,
+      "page": 9,
+      "text": "tan C 记为 c。",
+      "file": "050.mp3",
+      "estimated_start_ms": 123190,
+      "estimated_end_ms": 124880
+    },
+    {
+      "cue_index": 51,
+      "page": 9,
+      "text": "因为 B 和 C 是锐角，",
+      "file": "051.mp3",
+      "estimated_start_ms": 124880,
+      "estimated_end_ms": 126760
+    },
+    {
+      "cue_index": 52,
+      "page": 9,
+      "text": "且 B 小于等于 C，",
+      "file": "052.mp3",
+      "estimated_start_ms": 126760,
+      "estimated_end_ms": 128450
+    },
+    {
+      "cue_index": 53,
+      "page": 9,
+      "text": "所以 b 与 c 都是正整数，",
+      "file": "053.mp3",
+      "estimated_start_ms": 128450,
+      "estimated_end_ms": 130710
+    },
+    {
+      "cue_index": 54,
+      "page": 9,
+      "text": "并且 b 小于等于 c。",
+      "file": "054.mp3",
+      "estimated_start_ms": 130710,
+      "estimated_end_ms": 132590
+    },
+    {
+      "cue_index": 55,
+      "page": 9,
+      "text": "接下来就可以用代数方法求解。",
+      "file": "055.mp3",
+      "estimated_start_ms": 132590,
+      "estimated_end_ms": 135420
+    },
+    {
+      "cue_index": 56,
+      "page": 10,
+      "text": "我们已经得到 B 加 C 等于一百三十五度。",
+      "file": "056.mp3",
+      "estimated_start_ms": 135620,
+      "estimated_end_ms": 139210
+    },
+    {
+      "cue_index": 57,
+      "page": 10,
+      "text": "而一百三十五度在第二象限，",
+      "file": "057.mp3",
+      "estimated_start_ms": 139210,
+      "estimated_end_ms": 141850
+    },
+    {
+      "cue_index": 58,
+      "page": 10,
+      "text": "它的正切值是负一。",
+      "file": "058.mp3",
+      "estimated_start_ms": 141850,
+      "estimated_end_ms": 143730
+    },
+    {
+      "cue_index": 59,
+      "page": 10,
+      "text": "所以 tan 括号 B 加 C 括号等于负一，",
+      "file": "059.mp3",
+      "estimated_start_ms": 143730,
+      "estimated_end_ms": 147130
+    },
+    {
+      "cue_index": 60,
+      "page": 10,
+      "text": "这就是联立整数条件的关键。",
+      "file": "060.mp3",
+      "estimated_start_ms": 147130,
+      "estimated_end_ms": 149770
+    },
+    {
+      "cue_index": 61,
+      "page": 11,
+      "text": "正切和角公式告诉我们，",
+      "file": "061.mp3",
+      "estimated_start_ms": 149970,
+      "estimated_end_ms": 152230
+    },
+    {
+      "cue_index": 62,
+      "page": 11,
+      "text": "tan 括号 B 加 C 括号，",
+      "file": "062.mp3",
+      "estimated_start_ms": 152230,
+      "estimated_end_ms": 154490
+    },
+    {
+      "cue_index": 63,
+      "page": 11,
+      "text": "等于 b 加 c 除以一减 b 乘 c。",
+      "file": "063.mp3",
+      "estimated_start_ms": 154490,
+      "estimated_end_ms": 157130
+    },
+    {
+      "cue_index": 64,
+      "page": 11,
+      "text": "这个值又等于负一。",
+      "file": "064.mp3",
+      "estimated_start_ms": 157130,
+      "estimated_end_ms": 159010
+    },
+    {
+      "cue_index": 65,
+      "page": 11,
+      "text": "因为这里的正切有定义，",
+      "file": "065.mp3",
+      "estimated_start_ms": 159010,
+      "estimated_end_ms": 161270
+    },
+    {
+      "cue_index": 66,
+      "page": 11,
+      "text": "所以分母一减 bc 不等于零，",
+      "file": "066.mp3",
+      "estimated_start_ms": 161270,
+      "estimated_end_ms": 163910
+    },
+    {
+      "cue_index": 67,
+      "page": 11,
+      "text": "可以安全移项。",
+      "file": "067.mp3",
+      "estimated_start_ms": 163910,
+      "estimated_end_ms": 165510
+    },
+    {
+      "cue_index": 68,
+      "page": 12,
+      "text": "把等式两边乘上一减 bc，",
+      "file": "068.mp3",
+      "estimated_start_ms": 165710,
+      "estimated_end_ms": 168160
+    },
+    {
+      "cue_index": 69,
+      "page": 12,
+      "text": "就得到 b 加 c 等于 bc 减一。",
+      "file": "069.mp3",
+      "estimated_start_ms": 168160,
+      "estimated_end_ms": 170800
+    },
+    {
+      "cue_index": 70,
+      "page": 12,
+      "text": "然后移项，",
+      "file": "070.mp3",
+      "estimated_start_ms": 170800,
+      "estimated_end_ms": 172400
+    },
+    {
+      "cue_index": 71,
+      "page": 12,
+      "text": "得到 bc 减 b 减 c 等于一。",
+      "file": "071.mp3",
+      "estimated_start_ms": 172400,
+      "estimated_end_ms": 174850
+    },
+    {
+      "cue_index": 72,
+      "page": 12,
+      "text": "这个式子看上去有两个未知数，",
+      "file": "072.mp3",
+      "estimated_start_ms": 174850,
+      "estimated_end_ms": 177680
+    },
+    {
+      "cue_index": 73,
+      "page": 12,
+      "text": "但可以通过补一项变成乘积。",
+      "file": "073.mp3",
+      "estimated_start_ms": 177680,
+      "estimated_end_ms": 180320
+    },
+    {
+      "cue_index": 74,
+      "page": 13,
+      "text": "在 bc 减 b 减 c 等于一的两边同时加一，",
+      "file": "074.mp3",
+      "estimated_start_ms": 180520,
+      "estimated_end_ms": 184110
+    },
+    {
+      "cue_index": 75,
+      "page": 13,
+      "text": "左边就能拆成 b 减一乘以 c 减一，",
+      "file": "075.mp3",
+      "estimated_start_ms": 184110,
+      "estimated_end_ms": 187130
+    },
+    {
+      "cue_index": 76,
+      "page": 13,
+      "text": "右边等于二。",
+      "file": "076.mp3",
+      "estimated_start_ms": 187130,
+      "estimated_end_ms": 188730
+    },
+    {
+      "cue_index": 77,
+      "page": 13,
+      "text": "这样我们把三角函数方程，",
+      "file": "077.mp3",
+      "estimated_start_ms": 188730,
+      "estimated_end_ms": 191180
+    },
+    {
+      "cue_index": 78,
+      "page": 13,
+      "text": "变成了两个整数因子的配对问题。",
+      "file": "078.mp3",
+      "estimated_start_ms": 191180,
+      "estimated_end_ms": 194200
+    },
+    {
+      "cue_index": 79,
+      "page": 14,
+      "text": "由于 b 与 c 都至少是一，",
+      "file": "079.mp3",
+      "estimated_start_ms": 194400,
+      "estimated_end_ms": 196660
+    },
+    {
+      "cue_index": 80,
+      "page": 14,
+      "text": "并且两个因子的乘积是二，",
+      "file": "080.mp3",
+      "estimated_start_ms": 196660,
+      "estimated_end_ms": 199110
+    },
+    {
+      "cue_index": 81,
+      "page": 14,
+      "text": "所以 b 减一和 c 减一都必须是正整数。",
+      "file": "081.mp3",
+      "estimated_start_ms": 199110,
+      "estimated_end_ms": 202510
+    },
+    {
+      "cue_index": 82,
+      "page": 14,
+      "text": "二的正整数因子只能是一和二。",
+      "file": "082.mp3",
+      "estimated_start_ms": 202510,
+      "estimated_end_ms": 205340
+    },
+    {
+      "cue_index": 83,
+      "page": 14,
+      "text": "根据 b 小于等于 c 的顺序，",
+      "file": "083.mp3",
+      "estimated_start_ms": 205340,
+      "estimated_end_ms": 207790
+    },
+    {
+      "cue_index": 84,
+      "page": 14,
+      "text": "就得到 b 减一等于一，",
+      "file": "084.mp3",
+      "estimated_start_ms": 207790,
+      "estimated_end_ms": 209860
+    },
+    {
+      "cue_index": 85,
+      "page": 14,
+      "text": "c 减一等于二。",
+      "file": "085.mp3",
+      "estimated_start_ms": 209860,
+      "estimated_end_ms": 211460
+    },
+    {
+      "cue_index": 86,
+      "page": 15,
+      "text": "于是三个内角的正切值分别等于一、二、三。",
+      "file": "086.mp3",
+      "estimated_start_ms": 211660,
+      "estimated_end_ms": 215630
+    },
+    {
+      "cue_index": 87,
+      "page": 15,
+      "text": "题目要求的和就是一加二加三，",
+      "file": "087.mp3",
+      "estimated_start_ms": 215630,
+      "estimated_end_ms": 218460
+    },
+    {
+      "cue_index": 88,
+      "page": 15,
+      "text": "答案等于六。",
+      "file": "088.mp3",
+      "estimated_start_ms": 218460,
+      "estimated_end_ms": 220060
+    },
+    {
+      "cue_index": 89,
+      "page": 15,
+      "text": "注意这个答案不是猜中的，",
+      "file": "089.mp3",
+      "estimated_start_ms": 220060,
+      "estimated_end_ms": 222510
+    },
+    {
+      "cue_index": 90,
+      "page": 15,
+      "text": "而是由角度范围和整数条件共同唯一确定的。",
+      "file": "090.mp3",
+      "estimated_start_ms": 222510,
+      "estimated_end_ms": 226480
+    },
+    {
+      "cue_index": 91,
+      "page": 16,
+      "text": "做这类题时要避开两个错误。",
+      "file": "091.mp3",
+      "estimated_start_ms": 226680,
+      "estimated_end_ms": 229320
+    },
+    {
+      "cue_index": 92,
+      "page": 16,
+      "text": "第一，",
+      "file": "092.mp3",
+      "estimated_start_ms": 229320,
+      "estimated_end_ms": 230920
+    },
+    {
+      "cue_index": 93,
+      "page": 16,
+      "text": "正切函数不能在跨越九十度的区间里直接谈整体单调性；",
+      "file": "093.mp3",
+      "estimated_start_ms": 230920,
+      "estimated_end_ms": 235840
+    },
+    {
+      "cue_index": 94,
+      "page": 16,
+      "text": "第二，",
+      "file": "094.mp3",
+      "estimated_start_ms": 235840,
+      "estimated_end_ms": 237440
+    },
+    {
+      "cue_index": 95,
+      "page": 16,
+      "text": "两个角之和的正切，",
+      "file": "095.mp3",
+      "estimated_start_ms": 237440,
+      "estimated_end_ms": 239320
+    },
+    {
+      "cue_index": 96,
+      "page": 16,
+      "text": "并不等于两个正切值直接相加，",
+      "file": "096.mp3",
+      "estimated_start_ms": 239320,
+      "estimated_end_ms": 242150
+    },
+    {
+      "cue_index": 97,
+      "page": 16,
+      "text": "必须使用完整的和角公式。",
+      "file": "097.mp3",
+      "estimated_start_ms": 242150,
+      "estimated_end_ms": 244600
+    },
+    {
+      "cue_index": 98,
+      "page": 17,
+      "text": "现在复盘完整思路：",
+      "file": "098.mp3",
+      "estimated_start_ms": 244800,
+      "estimated_end_ms": 246680
+    },
+    {
+      "cue_index": 99,
+      "page": 17,
+      "text": "先排序找到最小角，",
+      "file": "099.mp3",
+      "estimated_start_ms": 246680,
+      "estimated_end_ms": 248560
+    },
+    {
+      "cue_index": 100,
+      "page": 17,
+      "text": "用三角形内角和与正切单调性锁定它的正切值；",
+      "file": "100.mp3",
+      "estimated_start_ms": 248560,
+      "estimated_end_ms": 252720
+    },
+    {
+      "cue_index": 101,
+      "page": 17,
+      "text": "接着利用另外两角的和套用正切和角公式；",
+      "file": "101.mp3",
+      "estimated_start_ms": 252720,
+      "estimated_end_ms": 256500
+    },
+    {
+      "cue_index": 102,
+      "page": 17,
+      "text": "最后对整数方程进行因式分解。",
+      "file": "102.mp3",
+      "estimated_start_ms": 256500,
+      "estimated_end_ms": 259330
+    },
+    {
+      "cue_index": 103,
+      "page": 18,
+      "text": "请再判断一个类似的问题：",
+      "file": "103.mp3",
+      "estimated_start_ms": 259530,
+      "estimated_end_ms": 261980
+    },
+    {
+      "cue_index": 104,
+      "page": 18,
+      "text": "如果三角形三个内角的正切值分别为一、二、四，",
+      "file": "104.mp3",
+      "estimated_start_ms": 261980,
+      "estimated_end_ms": 266330
+    },
+    {
+      "cue_index": 105,
+      "page": 18,
+      "text": "这样的三角形存在吗？",
+      "file": "105.mp3",
+      "estimated_start_ms": 266330,
+      "estimated_end_ms": 268400
+    },
+    {
+      "cue_index": 106,
+      "page": 18,
+      "text": "请先根据刚才的条件想一想，",
+      "file": "106.mp3",
+      "estimated_start_ms": 268400,
+      "estimated_end_ms": 271040
+    },
+    {
+      "cue_index": 107,
+      "page": 18,
+      "text": "不要只凭这三个数都是正整数就做判断。",
+      "file": "107.mp3",
+      "estimated_start_ms": 271040,
+      "estimated_end_ms": 274630
+    },
+    {
+      "cue_index": 108,
+      "page": 19,
+      "text": "三角形的三个内角只要正切都有定义，",
+      "file": "108.mp3",
+      "estimated_start_ms": 274830,
+      "estimated_end_ms": 278230
+    },
+    {
+      "cue_index": 109,
+      "page": 19,
+      "text": "就满足三个正切之和等于三个正切之积。",
+      "file": "109.mp3",
+      "estimated_start_ms": 278230,
+      "estimated_end_ms": 281820
+    },
+    {
+      "cue_index": 110,
+      "page": 19,
+      "text": "对于一、二、四，",
+      "file": "110.mp3",
+      "estimated_start_ms": 281820,
+      "estimated_end_ms": 283510
+    },
+    {
+      "cue_index": 111,
+      "page": 19,
+      "text": "左边是一加二加四等于七，",
+      "file": "111.mp3",
+      "estimated_start_ms": 283510,
+      "estimated_end_ms": 285960
+    },
+    {
+      "cue_index": 112,
+      "page": 19,
+      "text": "右边是一乘二乘四等于八。",
+      "file": "112.mp3",
+      "estimated_start_ms": 285960,
+      "estimated_end_ms": 288410
+    },
+    {
+      "cue_index": 113,
+      "page": 19,
+      "text": "七不等于八，",
+      "file": "113.mp3",
+      "estimated_start_ms": 288410,
+      "estimated_end_ms": 290010
+    },
+    {
+      "cue_index": 114,
+      "page": 19,
+      "text": "因此这样的三角形不存在。",
+      "file": "114.mp3",
+      "estimated_start_ms": 290010,
+      "estimated_end_ms": 292460
+    },
+    {
+      "cue_index": 115,
+      "page": 20,
+      "text": "做完后请记住一种思考方式：",
+      "file": "115.mp3",
+      "estimated_start_ms": 292660,
+      "estimated_end_ms": 295300
+    },
+    {
+      "cue_index": 116,
+      "page": 20,
+      "text": "先让几何条件限制角度，",
+      "file": "116.mp3",
+      "estimated_start_ms": 295300,
+      "estimated_end_ms": 297560
+    },
+    {
+      "cue_index": 117,
+      "page": 20,
+      "text": "再让函数性质限制数值，",
+      "file": "117.mp3",
+      "estimated_start_ms": 297560,
+      "estimated_end_ms": 299820
+    },
+    {
+      "cue_index": 118,
+      "page": 20,
+      "text": "最后利用整数条件缩小可能性。",
+      "file": "118.mp3",
+      "estimated_start_ms": 299820,
+      "estimated_end_ms": 302650
+    },
+    {
+      "cue_index": 119,
+      "page": 20,
+      "text": "你可以试着独立解释，",
+      "file": "119.mp3",
+      "estimated_start_ms": 302650,
+      "estimated_end_ms": 304720
+    },
+    {
+      "cue_index": 120,
+      "page": 20,
+      "text": "为什么最小角的正切一定等于一。",
+      "file": "120.mp3",
+      "estimated_start_ms": 304720,
+      "estimated_end_ms": 307740
+    }
+  ]
+}

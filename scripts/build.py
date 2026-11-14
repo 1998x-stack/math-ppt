@@ -189,6 +189,8 @@ def build(doc,out,ms_per_char=190):
     (out/'lesson.srt').write_text(srt,encoding='utf-8-sig')
     (out/'voiceover.txt').write_text('\n\n'.join(s['notes'] for s in doc['slides'])+'\n',encoding='utf-8')
     (out/'timeline.json').write_text(json.dumps({'schema_version':1,'alignment':'estimated_from_text_not_audio','total_ms':t,'slides':timeline,'cues':captions},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    from slide_map import create_map_file
+    create_map_file(out/'timeline.json',out/'lesson.srt',out/'slide_map.json')
     print(f"PASS: {len(timeline)} editable slides, {len(captions)} SRT cues, approx {t/1000:.1f}s")
 
 if __name__=='__main__':
