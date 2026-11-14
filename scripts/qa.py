@@ -106,7 +106,7 @@ def check(source, folder):
         mapping=validate_map_file(folder/'slide_map.json',folder/'lesson.srt')
         if mapping['page_count']!=len(doc['slides']) or mapping['cue_count']!=len(cues):
             errors.append('PPT page/SRT cue count disagrees with slide_map')
-        if mapping['alignment']!=timeline['alignment']:
+        if mapping['alignment']!=t['alignment']:
             errors.append('Slide map audio timing status disagrees with timeline')
     except (ValueError,FileNotFoundError,KeyError) as e:
         errors.append(f'Invalid/missing slide map: {e}')
