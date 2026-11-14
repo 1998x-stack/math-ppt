@@ -81,3 +81,7 @@ flowchart LR
 - [AGENTS.md](AGENTS.md)：维护与校验规则。
 
 后续可以把不同年级和专题加入各自的 `examples/<topic>/` 目录，保持相同的输入输出契约。
+
+## 已发布的真实 example 成品
+
+完整示例目录：[examples/tangent-integer-triangle/](examples/tangent-integer-triangle/)，其中不仅有可复现的教案、逐页配音和 SRT，还包括 CI 自动生成并回写的 [可编辑 PPTX](examples/tangent-integer-triangle/lesson.pptx)、[PDF 预览](examples/tangent-integer-triangle/lesson.pdf) 和 [20 张竖屏图片](examples/tangent-integer-triangle/slides/)。这些二进制产物由 GitHub Actions 发布任务生成，普通 PR 只做验证，不推送文件。

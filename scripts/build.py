@@ -120,11 +120,36 @@ def clock(ms):
     return f'{h:02d}:{m:02d}:{s:02d},{ms:03d}'
 
 def validate(doc):
-    slides=doc.get('slides') or []
-    if not slides:raise ValueError('No slides supplied')
+    """Reject unsafe/incomplete content before any user-facing artifact is emitted."""
+    slides=doc.get('slides')
+    if not isinstance(slides,list) or not slides:
+        raise ValueError('slides must be a nonempty list')
+    if not isinstance(doc.get('series',''),str):
+        raise ValueError('series must be text')
+    if any(re.search(p,doc.get('series',''),re.I) for p in BANNED):
+        raise ValueError('Production instructions leaked into visible series/footer')
+    allowed={'hook','question','concept','triangle','formula','factor','steps',
+             'result','warning','quiz','check','closing'}
     for i,d in enumerate(slides,1):
+        if not isinstance(d,dict):
+            raise ValueError(f'Slide {i} must be an object')
         for key in ('title','type','notes'):
-            if not d.get(key):raise ValueError(f'Slide {i} missing {key}')
+            if not isinstance(d.get(key),str) or not d[key].strip():
+                raise ValueError(f'Slide {i} missing {key}')
+        if d['type'] not in allowed:
+            raise ValueError(f'Slide {i} unsupported type: {d["type"]}')
+        # Rendering shows only four rows (two on a triangle page).
+        # Reject, never silently discard authored teaching steps.
+        line_items=d.get('lines') or d.get('steps') or []
+        if not isinstance(line_items,list):
+            raise ValueError(f'Slide {i} lines/steps must be a list')
+        choices=d.get('choices') or []
+        if not isinstance(choices,list):
+            raise ValueError(f'Slide {i} choices must be a list')
+        rows=len(line_items)+len(choices)+(1 if d.get('secondary') else 0)
+        allowed_rows=2 if d['type']=='triangle' else 4
+        if rows>allowed_rows:
+            raise ValueError(f'Slide {i} has {rows} text rows; only {allowed_rows} are visible')
         for key,value in d.items():
             serialized=json.dumps(value,ensure_ascii=False)
             if any(re.search(p,serialized,re.I) for p in BANNED):

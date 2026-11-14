@@ -33,9 +33,17 @@ def main():
     p.add_argument('--pause-ms',type=int,default=80)
     p.add_argument('--assemble',action='store_true',help='also build matching narration.wav')
     a=p.parse_args()
+    if a.pause_ms < 0:
+        p.error('--pause-ms must be nonnegative')
     if not shutil.which('ffprobe'):p.error('ffprobe required')
     if a.assemble and not shutil.which('ffmpeg'):p.error('ffmpeg required')
     orig=json.loads(Path(a.timeline).read_text(encoding='utf-8'))
+    if not orig.get('slides') or not orig.get('cues'):
+        p.error('timeline must include slides and cues')
+    if [c.get('index') for c in orig['cues']] != list(range(1,len(orig['cues'])+1)):
+        p.error('timeline cue indices must be sequential')
+    if sorted(i for page in orig['slides'] for i in page['cue_indices']) != list(range(1,len(orig['cues'])+1)):
+        p.error('every cue must be assigned to exactly one page')
     clips=Path(a.cue_audio_dir);out=Path(a.out);out.mkdir(parents=True,exist_ok=True)
     now=0;new_cues=[];new_pages=[]
     wav=None
@@ -56,6 +64,8 @@ def main():
                     wav.writeframes(b'\x00\x00'*round(48000*a.pause_ms/1000))
                 else:
                     duration=audio_ms(clip)
+                if duration <= 0:
+                    raise ValueError(f'Nonpositive audio duration: {clip}')
                 new_cues.append({**old,'start_ms':now,'end_ms':now+duration})
                 now+=duration+a.pause_ms
             new_pages.append({**page,'start_ms':start,'end_ms':now,'duration_ms':now-start})

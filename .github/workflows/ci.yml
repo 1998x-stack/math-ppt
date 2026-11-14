@@ -1,10 +1,13 @@
-name: Build and verify Math PPT
+name: Test, render and publish Math PPT examples
+
 on:
   push:
     branches: [main]
   pull_request:
+
 permissions:
   contents: read
+
 jobs:
   test-and-build:
     runs-on: ubuntu-latest
@@ -15,7 +18,7 @@ jobs:
           python-version: '3.11'
       - run: python -m pip install -r requirements.txt
       - run: python -m pytest -q
-      - name: Generate example PPT and SRT
+      - name: Build editable PPT, captions and timeline
         run: |
           python scripts/build.py --input examples/tangent-integer-triangle/lesson.json --out build
           python scripts/qa.py --input examples/tangent-integer-triangle/lesson.json --out build
@@ -27,3 +30,52 @@ jobs:
             build/lesson.srt
             build/voiceover.txt
             build/timeline.json
+
+  publish-example:
+    name: Commit complete example assets to examples/
+    needs: test-and-build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - name: Build and verify from source
+        run: |
+          python scripts/build.py --input examples/tangent-integer-triangle/lesson.json --out build
+          python scripts/qa.py --input examples/tangent-integer-triangle/lesson.json --out build
+      - name: Render vertical preview and export PNG pages
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq libreoffice-impress poppler-utils fonts-noto-cjk
+          mkdir -p build/png
+          libreoffice -env:UserInstallation=file:///tmp/lo_math_ppt --headless --convert-to pdf --outdir build build/lesson.pptx
+          test -s build/lesson.pdf
+          pdftoppm -png -r 120 -scale-to-x 1080 -scale-to-y 1920 build/lesson.pdf build/png/slide
+          test "$(find build/png -name 'slide-*.png' | wc -l)" -eq 20
+      - name: Sync generated example artifacts
+        run: |
+          set -eu
+          root=examples/tangent-integer-triangle
+          mkdir -p "$root/slides"
+          cp build/lesson.pptx "$root/lesson.pptx"
+          cp build/lesson.pdf "$root/lesson.pdf"
+          cp build/lesson.srt "$root/lesson.srt"
+          cp build/voiceover.txt "$root/voiceover.txt"
+          cp build/timeline.json "$root/timeline.json"
+          cp build/png/slide-*.png "$root/slides/"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f "$root/lesson.pptx" "$root/lesson.pdf" "$root/lesson.srt" "$root/voiceover.txt" "$root/timeline.json" "$root/slides/"
+          if ! git diff --cached --quiet; then
+            git commit -m "build(examples): publish verified PPT PDF PNG SRT and timeline [skip ci]"
+            git push origin HEAD:main
+          else
+            echo "Generated example is up to date"
+          fi
