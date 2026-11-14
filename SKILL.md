@@ -41,3 +41,9 @@ python scripts/build.py --input examples/tangent-integer-triangle/lesson.json \
 ```
 
 参见 [完整示例](examples/tangent-integer-triangle/lesson.json)、[TTS/SRT 工作流](references/audio-video-pipeline.md)。
+
+## 示例仓库与视频交付 QA
+
+每个 `examples/<slug>/` 应提供经 CI 生成并归档的 PPTX、PDF、逐页 PNG、原始 lesson JSON、SRT、voiceover、timeline 与来源核查文档；不可只保留一次性 Actions 构建附件。数学审核不能仅靠 Python 语法和数字枚举。任何受众可见字段（包括页面系列页脚）都不得出现“开头3秒”“9:16竖屏教学”等内部制作说明。PPT 画面字段不得被裁掉：超过可视文本容量时必须构建失败并要求分拆页面。
+
+正式配音完成后，运行 `scripts/retime_tts.py` 测量逐cue音频并拼接 WAV，再用 `scripts/assemble_video.py` 进行音频时长一致性验证和 MP4 组装；单独保留 aligned SRT 供剪映导入，**禁止把估算时间轴当作已精确同步**。

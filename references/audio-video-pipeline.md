@@ -25,3 +25,15 @@
 PPT 每页导出 1080×1920 PNG，按最终 `timeline.json` 中的页时长安排到视频轨。将校准后的字幕与音频导入剪映/CapCut，核对数学符号、字幕安全区、语速与画面切页点。若只需草稿，可用 FFmpeg 把连续 PNG 结合音轨生成 MP4。
 
 TTS、FFmpeg 或发布平台权限都属于外部依赖；本仓库的核心构建程序不会在没有音频的情况下冒称已完成配音或视频发布。
+
+## 从校准后的 TTS 直接组装 MP4（可选）
+
+```bash
+python scripts/retime_tts.py --timeline build/timeline.json \\
+  --cue-audio-dir audio/cues --out aligned --pause-ms 80 --assemble
+python scripts/assemble_video.py --timeline aligned/timeline.json \\
+  --slides-dir examples/tangent-integer-triangle/slides \\
+  --audio aligned/narration.wav --output aligned/lesson.mp4
+```
+
+`assemble_video.py` 只接受已完成音频计时的时间轴；估算时间轴需要显式使用 `--allow-estimated`（仅用于草稿）。它还会检查音频总时长与时间轴误差是否超过300毫秒。SRT 不会烧录进视频，请在剪映中导入 `aligned/lesson.srt` 以便保持编辑能力。

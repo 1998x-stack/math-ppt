@@ -158,6 +158,8 @@ def validate(doc):
             raise ValueError(f'Slide {i} narration too short for a detailed lesson')
 
 def build(doc,out,ms_per_char=190):
+    if ms_per_char <= 0:
+        raise ValueError('ms_per_char must be positive')
     validate(doc)
     out.mkdir(parents=True,exist_ok=True)
     prs=Presentation()
