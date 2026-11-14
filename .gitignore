@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pptx
+*.pdf
+*.mp4
+examples/**/generated/
+examples/**/png/
