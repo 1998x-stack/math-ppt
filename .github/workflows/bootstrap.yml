@@ -13,7 +13,7 @@ jobs:
       - name: Restore full source, examples and SRT
         run: |
           set -euo pipefail
-          base64 -d .bootstrap/source.tar.xz.b64 | tar -xJ -C .
+          cat .bootstrap/part-* | base64 -d | tar -xJ -C .
           python3 scripts/build_media.py --input examples/tangent-integer-triangle/lesson.json --out examples/tangent-integer-triangle
           rm -rf .bootstrap .github/workflows/bootstrap.yml
           git config user.name "github-actions[bot]"
