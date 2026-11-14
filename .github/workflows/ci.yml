@@ -1,0 +1,29 @@
+name: Build and verify Math PPT
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements.txt
+      - run: python -m pytest -q
+      - name: Generate example PPT and SRT
+        run: |
+          python scripts/build.py --input examples/tangent-integer-triangle/lesson.json --out build
+          python scripts/qa.py --input examples/tangent-integer-triangle/lesson.json --out build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: math-ppt-example
+          path: |
+            build/lesson.pptx
+            build/lesson.srt
+            build/voiceover.txt
+            build/timeline.json
