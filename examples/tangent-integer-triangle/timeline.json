@@ -1,0 +1,1169 @@
+{
+  "schema_version": 1,
+  "alignment": "estimated_from_text_not_audio",
+  "total_ms": 307940,
+  "slides": [
+    {
+      "slide": 1,
+      "title": "三个正切都是整数？",
+      "start_ms": 0,
+      "end_ms": 13040,
+      "duration_ms": 13040,
+      "cue_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "image": "slide-01.png"
+    },
+    {
+      "slide": 2,
+      "title": "题目究竟告诉了什么？",
+      "start_ms": 13040,
+      "end_ms": 28610,
+      "duration_ms": 15570,
+      "cue_indices": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "image": "slide-02.png"
+    },
+    {
+      "slide": 3,
+      "title": "先把角按大小排序",
+      "start_ms": 28610,
+      "end_ms": 43610,
+      "duration_ms": 15000,
+      "cue_indices": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "image": "slide-03.png"
+    },
+    {
+      "slide": 4,
+      "title": "最小角为何 ≤ 60°？",
+      "start_ms": 43610,
+      "end_ms": 58340,
+      "duration_ms": 14730,
+      "cue_indices": [
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "image": "slide-04.png"
+    },
+    {
+      "slide": 5,
+      "title": "正切值被夹在什么范围？",
+      "start_ms": 58340,
+      "end_ms": 72870,
+      "duration_ms": 14530,
+      "cue_indices": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "image": "slide-05.png"
+    },
+    {
+      "slide": 6,
+      "title": "tan A 只能等于 1",
+      "start_ms": 72870,
+      "end_ms": 88700,
+      "duration_ms": 15830,
+      "cue_indices": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "image": "slide-06.png"
+    },
+    {
+      "slide": 7,
+      "title": "另外两个角还剩多少？",
+      "start_ms": 88700,
+      "end_ms": 103220,
+      "duration_ms": 14520,
+      "cue_indices": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "image": "slide-07.png"
+    },
+    {
+      "slide": 8,
+      "title": "B、C 都是锐角吗？",
+      "start_ms": 103220,
+      "end_ms": 120930,
+      "duration_ms": 17710,
+      "cue_indices": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "image": "slide-08.png"
+    },
+    {
+      "slide": 9,
+      "title": "用 b、c 表示剩余正切",
+      "start_ms": 120930,
+      "end_ms": 135620,
+      "duration_ms": 14690,
+      "cue_indices": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ],
+      "image": "slide-09.png"
+    },
+    {
+      "slide": 10,
+      "title": "tan(B+C) 等于多少？",
+      "start_ms": 135620,
+      "end_ms": 149970,
+      "duration_ms": 14350,
+      "cue_indices": [
+        56,
+        57,
+        58,
+        59,
+        60
+      ],
+      "image": "slide-10.png"
+    },
+    {
+      "slide": 11,
+      "title": "把角的关系写成方程",
+      "start_ms": 149970,
+      "end_ms": 165710,
+      "duration_ms": 15740,
+      "cue_indices": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ],
+      "image": "slide-11.png"
+    },
+    {
+      "slide": 12,
+      "title": "先移项再因式分解",
+      "start_ms": 165710,
+      "end_ms": 180520,
+      "duration_ms": 14810,
+      "cue_indices": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ],
+      "image": "slide-12.png"
+    },
+    {
+      "slide": 13,
+      "title": "为什么会出现乘积等于 2？",
+      "start_ms": 180520,
+      "end_ms": 194400,
+      "duration_ms": 13880,
+      "cue_indices": [
+        74,
+        75,
+        76,
+        77,
+        78
+      ],
+      "image": "slide-13.png"
+    },
+    {
+      "slide": 14,
+      "title": "因数只能怎么配？",
+      "start_ms": 194400,
+      "end_ms": 211660,
+      "duration_ms": 17260,
+      "cue_indices": [
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ],
+      "image": "slide-14.png"
+    },
+    {
+      "slide": 15,
+      "title": "三个正切值全部确定",
+      "start_ms": 211660,
+      "end_ms": 226680,
+      "duration_ms": 15020,
+      "cue_indices": [
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "image": "slide-15.png"
+    },
+    {
+      "slide": 16,
+      "title": "有两个常见的错误",
+      "start_ms": 226680,
+      "end_ms": 244800,
+      "duration_ms": 18120,
+      "cue_indices": [
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ],
+      "image": "slide-16.png"
+    },
+    {
+      "slide": 17,
+      "title": "这道题到底用了哪四步？",
+      "start_ms": 244800,
+      "end_ms": 259530,
+      "duration_ms": 14730,
+      "cue_indices": [
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "image": "slide-17.png"
+    },
+    {
+      "slide": 18,
+      "title": "若三个值是 1、2、4 呢？",
+      "start_ms": 259530,
+      "end_ms": 274830,
+      "duration_ms": 15300,
+      "cue_indices": [
+        103,
+        104,
+        105,
+        106,
+        107
+      ],
+      "image": "slide-18.png"
+    },
+    {
+      "slide": 19,
+      "title": "1、2、4 不能成立",
+      "start_ms": 274830,
+      "end_ms": 292660,
+      "duration_ms": 17830,
+      "cue_indices": [
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "image": "slide-19.png"
+    },
+    {
+      "slide": 20,
+      "title": "关键不是背出答案 6",
+      "start_ms": 292660,
+      "end_ms": 307940,
+      "duration_ms": 15280,
+      "cue_indices": [
+        115,
+        116,
+        117,
+        118,
+        119,
+        120
+      ],
+      "image": "slide-20.png"
+    }
+  ],
+  "cues": [
+    {
+      "index": 1,
+      "slide": 1,
+      "start_ms": 0,
+      "end_ms": 3400,
+      "text": "这道题看起来是三个整数的求和问题，"
+    },
+    {
+      "index": 2,
+      "slide": 1,
+      "start_ms": 3400,
+      "end_ms": 5470,
+      "text": "但绝对不能随便猜数。"
+    },
+    {
+      "index": 3,
+      "slide": 1,
+      "start_ms": 5470,
+      "end_ms": 9630,
+      "text": "因为这三个数分别来自一个三角形的三个内角，"
+    },
+    {
+      "index": 4,
+      "slide": 1,
+      "start_ms": 9630,
+      "end_ms": 12840,
+      "text": "我们要先利用内角和把它们限制住。"
+    },
+    {
+      "index": 5,
+      "slide": 2,
+      "start_ms": 13040,
+      "end_ms": 17010,
+      "text": "已知三角形 ABC 的三个内角是 A、B、C，"
+    },
+    {
+      "index": 6,
+      "slide": 2,
+      "start_ms": 17010,
+      "end_ms": 19460,
+      "text": "三个角的正切值都为整数。"
+    },
+    {
+      "index": 7,
+      "slide": 2,
+      "start_ms": 19460,
+      "end_ms": 21720,
+      "text": "要求这三个正切值的和。"
+    },
+    {
+      "index": 8,
+      "slide": 2,
+      "start_ms": 21720,
+      "end_ms": 23320,
+      "text": "注意，"
+    },
+    {
+      "index": 9,
+      "slide": 2,
+      "start_ms": 23320,
+      "end_ms": 25770,
+      "text": "既然题目说正切值为整数，"
+    },
+    {
+      "index": 10,
+      "slide": 2,
+      "start_ms": 25770,
+      "end_ms": 28410,
+      "text": "就意味着它们都必须有定义。"
+    },
+    {
+      "index": 11,
+      "slide": 3,
+      "start_ms": 28610,
+      "end_ms": 30680,
+      "text": "三个正切值求的是和，"
+    },
+    {
+      "index": 12,
+      "slide": 3,
+      "start_ms": 30680,
+      "end_ms": 34080,
+      "text": "交换 A、B、C 的名称并不改变结果。"
+    },
+    {
+      "index": 13,
+      "slide": 3,
+      "start_ms": 34080,
+      "end_ms": 36720,
+      "text": "所以我们不妨按照大小排列，"
+    },
+    {
+      "index": 14,
+      "slide": 3,
+      "start_ms": 36720,
+      "end_ms": 38410,
+      "text": "设 A 小于等于 B，"
+    },
+    {
+      "index": 15,
+      "slide": 3,
+      "start_ms": 38410,
+      "end_ms": 40010,
+      "text": "小于等于 C。"
+    },
+    {
+      "index": 16,
+      "slide": 3,
+      "start_ms": 40010,
+      "end_ms": 43410,
+      "text": "研究最小角往往比直接枚举整数容易。"
+    },
+    {
+      "index": 17,
+      "slide": 4,
+      "start_ms": 43610,
+      "end_ms": 46630,
+      "text": "为什么最小角 A 不超过六十度呢？"
+    },
+    {
+      "index": 18,
+      "slide": 4,
+      "start_ms": 46630,
+      "end_ms": 49650,
+      "text": "因为如果连最小角都大于六十度，"
+    },
+    {
+      "index": 19,
+      "slide": 4,
+      "start_ms": 49650,
+      "end_ms": 51720,
+      "text": "另外两个角只会更大，"
+    },
+    {
+      "index": 20,
+      "slide": 4,
+      "start_ms": 51720,
+      "end_ms": 54930,
+      "text": "三角形内角和就会超过一百八十度。"
+    },
+    {
+      "index": 21,
+      "slide": 4,
+      "start_ms": 54930,
+      "end_ms": 58140,
+      "text": "因此最小角 A 一定小于等于六十度。"
+    },
+    {
+      "index": 22,
+      "slide": 5,
+      "start_ms": 58340,
+      "end_ms": 61930,
+      "text": "A 是一个大于零且不超过六十度的锐角。"
+    },
+    {
+      "index": 23,
+      "slide": 5,
+      "start_ms": 61930,
+      "end_ms": 64950,
+      "text": "正切函数在锐角区间内严格递增，"
+    },
+    {
+      "index": 24,
+      "slide": 5,
+      "start_ms": 64950,
+      "end_ms": 67020,
+      "text": "所以 tan A 大于零，"
+    },
+    {
+      "index": 25,
+      "slide": 5,
+      "start_ms": 67020,
+      "end_ms": 69470,
+      "text": "同时不超过 tan 六十度，"
+    },
+    {
+      "index": 26,
+      "slide": 5,
+      "start_ms": 69470,
+      "end_ms": 71070,
+      "text": "也就是根号三。"
+    },
+    {
+      "index": 27,
+      "slide": 5,
+      "start_ms": 71070,
+      "end_ms": 72670,
+      "text": "根号三小于二。"
+    },
+    {
+      "index": 28,
+      "slide": 6,
+      "start_ms": 72870,
+      "end_ms": 75890,
+      "text": "现在同时知道 tan A 是正整数，"
+    },
+    {
+      "index": 29,
+      "slide": 6,
+      "start_ms": 75890,
+      "end_ms": 77580,
+      "text": "并且严格小于二。"
+    },
+    {
+      "index": 30,
+      "slide": 6,
+      "start_ms": 77580,
+      "end_ms": 79460,
+      "text": "这样的整数只有一，"
+    },
+    {
+      "index": 31,
+      "slide": 6,
+      "start_ms": 79460,
+      "end_ms": 81910,
+      "text": "所以 tan A 必须等于一。"
+    },
+    {
+      "index": 32,
+      "slide": 6,
+      "start_ms": 81910,
+      "end_ms": 83980,
+      "text": "因为 A 在锐角范围内，"
+    },
+    {
+      "index": 33,
+      "slide": 6,
+      "start_ms": 83980,
+      "end_ms": 86430,
+      "text": "正切等于一对应四十五度，"
+    },
+    {
+      "index": 34,
+      "slide": 6,
+      "start_ms": 86430,
+      "end_ms": 88500,
+      "text": "于是 A 等于四十五度。"
+    },
+    {
+      "index": 35,
+      "slide": 7,
+      "start_ms": 88700,
+      "end_ms": 90960,
+      "text": "已经知道 A 是四十五度。"
+    },
+    {
+      "index": 36,
+      "slide": 7,
+      "start_ms": 90960,
+      "end_ms": 92840,
+      "text": "根据三角形内角和，"
+    },
+    {
+      "index": 37,
+      "slide": 7,
+      "start_ms": 92840,
+      "end_ms": 95100,
+      "text": "另外两个角 B 与 C 的和，"
+    },
+    {
+      "index": 38,
+      "slide": 7,
+      "start_ms": 95100,
+      "end_ms": 97740,
+      "text": "就是一百八十度减四十五度，"
+    },
+    {
+      "index": 39,
+      "slide": 7,
+      "start_ms": 97740,
+      "end_ms": 99620,
+      "text": "等于一百三十五度。"
+    },
+    {
+      "index": 40,
+      "slide": 7,
+      "start_ms": 99620,
+      "end_ms": 103020,
+      "text": "这给后面的正切和角公式提供了条件。"
+    },
+    {
+      "index": 41,
+      "slide": 8,
+      "start_ms": 103220,
+      "end_ms": 106240,
+      "text": "这里不能直接默认 B 和 C 是锐角。"
+    },
+    {
+      "index": 42,
+      "slide": 8,
+      "start_ms": 106240,
+      "end_ms": 107930,
+      "text": "若 C 大于九十度，"
+    },
+    {
+      "index": 43,
+      "slide": 8,
+      "start_ms": 107930,
+      "end_ms": 110570,
+      "text": "而 A、B 均不小于四十五度，"
+    },
+    {
+      "index": 44,
+      "slide": 8,
+      "start_ms": 110570,
+      "end_ms": 113020,
+      "text": "则内角和超过一百八十度；"
+    },
+    {
+      "index": 45,
+      "slide": 8,
+      "start_ms": 113020,
+      "end_ms": 114710,
+      "text": "若 C 等于九十度，"
+    },
+    {
+      "index": 46,
+      "slide": 8,
+      "start_ms": 114710,
+      "end_ms": 116590,
+      "text": "tan C 没有定义。"
+    },
+    {
+      "index": 47,
+      "slide": 8,
+      "start_ms": 116590,
+      "end_ms": 118470,
+      "text": "两种情况都不允许。"
+    },
+    {
+      "index": 48,
+      "slide": 8,
+      "start_ms": 118470,
+      "end_ms": 120730,
+      "text": "所以 B、C 必须是锐角。"
+    },
+    {
+      "index": 49,
+      "slide": 9,
+      "start_ms": 120930,
+      "end_ms": 123190,
+      "text": "现在把 tan B 记为 b，"
+    },
+    {
+      "index": 50,
+      "slide": 9,
+      "start_ms": 123190,
+      "end_ms": 124880,
+      "text": "tan C 记为 c。"
+    },
+    {
+      "index": 51,
+      "slide": 9,
+      "start_ms": 124880,
+      "end_ms": 126760,
+      "text": "因为 B 和 C 是锐角，"
+    },
+    {
+      "index": 52,
+      "slide": 9,
+      "start_ms": 126760,
+      "end_ms": 128450,
+      "text": "且 B 小于等于 C，"
+    },
+    {
+      "index": 53,
+      "slide": 9,
+      "start_ms": 128450,
+      "end_ms": 130710,
+      "text": "所以 b 与 c 都是正整数，"
+    },
+    {
+      "index": 54,
+      "slide": 9,
+      "start_ms": 130710,
+      "end_ms": 132590,
+      "text": "并且 b 小于等于 c。"
+    },
+    {
+      "index": 55,
+      "slide": 9,
+      "start_ms": 132590,
+      "end_ms": 135420,
+      "text": "接下来就可以用代数方法求解。"
+    },
+    {
+      "index": 56,
+      "slide": 10,
+      "start_ms": 135620,
+      "end_ms": 139210,
+      "text": "我们已经得到 B 加 C 等于一百三十五度。"
+    },
+    {
+      "index": 57,
+      "slide": 10,
+      "start_ms": 139210,
+      "end_ms": 141850,
+      "text": "而一百三十五度在第二象限，"
+    },
+    {
+      "index": 58,
+      "slide": 10,
+      "start_ms": 141850,
+      "end_ms": 143730,
+      "text": "它的正切值是负一。"
+    },
+    {
+      "index": 59,
+      "slide": 10,
+      "start_ms": 143730,
+      "end_ms": 147130,
+      "text": "所以 tan 括号 B 加 C 括号等于负一，"
+    },
+    {
+      "index": 60,
+      "slide": 10,
+      "start_ms": 147130,
+      "end_ms": 149770,
+      "text": "这就是联立整数条件的关键。"
+    },
+    {
+      "index": 61,
+      "slide": 11,
+      "start_ms": 149970,
+      "end_ms": 152230,
+      "text": "正切和角公式告诉我们，"
+    },
+    {
+      "index": 62,
+      "slide": 11,
+      "start_ms": 152230,
+      "end_ms": 154490,
+      "text": "tan 括号 B 加 C 括号，"
+    },
+    {
+      "index": 63,
+      "slide": 11,
+      "start_ms": 154490,
+      "end_ms": 157130,
+      "text": "等于 b 加 c 除以一减 b 乘 c。"
+    },
+    {
+      "index": 64,
+      "slide": 11,
+      "start_ms": 157130,
+      "end_ms": 159010,
+      "text": "这个值又等于负一。"
+    },
+    {
+      "index": 65,
+      "slide": 11,
+      "start_ms": 159010,
+      "end_ms": 161270,
+      "text": "因为这里的正切有定义，"
+    },
+    {
+      "index": 66,
+      "slide": 11,
+      "start_ms": 161270,
+      "end_ms": 163910,
+      "text": "所以分母一减 bc 不等于零，"
+    },
+    {
+      "index": 67,
+      "slide": 11,
+      "start_ms": 163910,
+      "end_ms": 165510,
+      "text": "可以安全移项。"
+    },
+    {
+      "index": 68,
+      "slide": 12,
+      "start_ms": 165710,
+      "end_ms": 168160,
+      "text": "把等式两边乘上一减 bc，"
+    },
+    {
+      "index": 69,
+      "slide": 12,
+      "start_ms": 168160,
+      "end_ms": 170800,
+      "text": "就得到 b 加 c 等于 bc 减一。"
+    },
+    {
+      "index": 70,
+      "slide": 12,
+      "start_ms": 170800,
+      "end_ms": 172400,
+      "text": "然后移项，"
+    },
+    {
+      "index": 71,
+      "slide": 12,
+      "start_ms": 172400,
+      "end_ms": 174850,
+      "text": "得到 bc 减 b 减 c 等于一。"
+    },
+    {
+      "index": 72,
+      "slide": 12,
+      "start_ms": 174850,
+      "end_ms": 177680,
+      "text": "这个式子看上去有两个未知数，"
+    },
+    {
+      "index": 73,
+      "slide": 12,
+      "start_ms": 177680,
+      "end_ms": 180320,
+      "text": "但可以通过补一项变成乘积。"
+    },
+    {
+      "index": 74,
+      "slide": 13,
+      "start_ms": 180520,
+      "end_ms": 184110,
+      "text": "在 bc 减 b 减 c 等于一的两边同时加一，"
+    },
+    {
+      "index": 75,
+      "slide": 13,
+      "start_ms": 184110,
+      "end_ms": 187130,
+      "text": "左边就能拆成 b 减一乘以 c 减一，"
+    },
+    {
+      "index": 76,
+      "slide": 13,
+      "start_ms": 187130,
+      "end_ms": 188730,
+      "text": "右边等于二。"
+    },
+    {
+      "index": 77,
+      "slide": 13,
+      "start_ms": 188730,
+      "end_ms": 191180,
+      "text": "这样我们把三角函数方程，"
+    },
+    {
+      "index": 78,
+      "slide": 13,
+      "start_ms": 191180,
+      "end_ms": 194200,
+      "text": "变成了两个整数因子的配对问题。"
+    },
+    {
+      "index": 79,
+      "slide": 14,
+      "start_ms": 194400,
+      "end_ms": 196660,
+      "text": "由于 b 与 c 都至少是一，"
+    },
+    {
+      "index": 80,
+      "slide": 14,
+      "start_ms": 196660,
+      "end_ms": 199110,
+      "text": "并且两个因子的乘积是二，"
+    },
+    {
+      "index": 81,
+      "slide": 14,
+      "start_ms": 199110,
+      "end_ms": 202510,
+      "text": "所以 b 减一和 c 减一都必须是正整数。"
+    },
+    {
+      "index": 82,
+      "slide": 14,
+      "start_ms": 202510,
+      "end_ms": 205340,
+      "text": "二的正整数因子只能是一和二。"
+    },
+    {
+      "index": 83,
+      "slide": 14,
+      "start_ms": 205340,
+      "end_ms": 207790,
+      "text": "根据 b 小于等于 c 的顺序，"
+    },
+    {
+      "index": 84,
+      "slide": 14,
+      "start_ms": 207790,
+      "end_ms": 209860,
+      "text": "就得到 b 减一等于一，"
+    },
+    {
+      "index": 85,
+      "slide": 14,
+      "start_ms": 209860,
+      "end_ms": 211460,
+      "text": "c 减一等于二。"
+    },
+    {
+      "index": 86,
+      "slide": 15,
+      "start_ms": 211660,
+      "end_ms": 215630,
+      "text": "于是三个内角的正切值分别等于一、二、三。"
+    },
+    {
+      "index": 87,
+      "slide": 15,
+      "start_ms": 215630,
+      "end_ms": 218460,
+      "text": "题目要求的和就是一加二加三，"
+    },
+    {
+      "index": 88,
+      "slide": 15,
+      "start_ms": 218460,
+      "end_ms": 220060,
+      "text": "答案等于六。"
+    },
+    {
+      "index": 89,
+      "slide": 15,
+      "start_ms": 220060,
+      "end_ms": 222510,
+      "text": "注意这个答案不是猜中的，"
+    },
+    {
+      "index": 90,
+      "slide": 15,
+      "start_ms": 222510,
+      "end_ms": 226480,
+      "text": "而是由角度范围和整数条件共同唯一确定的。"
+    },
+    {
+      "index": 91,
+      "slide": 16,
+      "start_ms": 226680,
+      "end_ms": 229320,
+      "text": "做这类题时要避开两个错误。"
+    },
+    {
+      "index": 92,
+      "slide": 16,
+      "start_ms": 229320,
+      "end_ms": 230920,
+      "text": "第一，"
+    },
+    {
+      "index": 93,
+      "slide": 16,
+      "start_ms": 230920,
+      "end_ms": 235840,
+      "text": "正切函数不能在跨越九十度的区间里直接谈整体单调性；"
+    },
+    {
+      "index": 94,
+      "slide": 16,
+      "start_ms": 235840,
+      "end_ms": 237440,
+      "text": "第二，"
+    },
+    {
+      "index": 95,
+      "slide": 16,
+      "start_ms": 237440,
+      "end_ms": 239320,
+      "text": "两个角之和的正切，"
+    },
+    {
+      "index": 96,
+      "slide": 16,
+      "start_ms": 239320,
+      "end_ms": 242150,
+      "text": "并不等于两个正切值直接相加，"
+    },
+    {
+      "index": 97,
+      "slide": 16,
+      "start_ms": 242150,
+      "end_ms": 244600,
+      "text": "必须使用完整的和角公式。"
+    },
+    {
+      "index": 98,
+      "slide": 17,
+      "start_ms": 244800,
+      "end_ms": 246680,
+      "text": "现在复盘完整思路："
+    },
+    {
+      "index": 99,
+      "slide": 17,
+      "start_ms": 246680,
+      "end_ms": 248560,
+      "text": "先排序找到最小角，"
+    },
+    {
+      "index": 100,
+      "slide": 17,
+      "start_ms": 248560,
+      "end_ms": 252720,
+      "text": "用三角形内角和与正切单调性锁定它的正切值；"
+    },
+    {
+      "index": 101,
+      "slide": 17,
+      "start_ms": 252720,
+      "end_ms": 256500,
+      "text": "接着利用另外两角的和套用正切和角公式；"
+    },
+    {
+      "index": 102,
+      "slide": 17,
+      "start_ms": 256500,
+      "end_ms": 259330,
+      "text": "最后对整数方程进行因式分解。"
+    },
+    {
+      "index": 103,
+      "slide": 18,
+      "start_ms": 259530,
+      "end_ms": 261980,
+      "text": "请再判断一个类似的问题："
+    },
+    {
+      "index": 104,
+      "slide": 18,
+      "start_ms": 261980,
+      "end_ms": 266330,
+      "text": "如果三角形三个内角的正切值分别为一、二、四，"
+    },
+    {
+      "index": 105,
+      "slide": 18,
+      "start_ms": 266330,
+      "end_ms": 268400,
+      "text": "这样的三角形存在吗？"
+    },
+    {
+      "index": 106,
+      "slide": 18,
+      "start_ms": 268400,
+      "end_ms": 271040,
+      "text": "请先根据刚才的条件想一想，"
+    },
+    {
+      "index": 107,
+      "slide": 18,
+      "start_ms": 271040,
+      "end_ms": 274630,
+      "text": "不要只凭这三个数都是正整数就做判断。"
+    },
+    {
+      "index": 108,
+      "slide": 19,
+      "start_ms": 274830,
+      "end_ms": 278230,
+      "text": "三角形的三个内角只要正切都有定义，"
+    },
+    {
+      "index": 109,
+      "slide": 19,
+      "start_ms": 278230,
+      "end_ms": 281820,
+      "text": "就满足三个正切之和等于三个正切之积。"
+    },
+    {
+      "index": 110,
+      "slide": 19,
+      "start_ms": 281820,
+      "end_ms": 283510,
+      "text": "对于一、二、四，"
+    },
+    {
+      "index": 111,
+      "slide": 19,
+      "start_ms": 283510,
+      "end_ms": 285960,
+      "text": "左边是一加二加四等于七，"
+    },
+    {
+      "index": 112,
+      "slide": 19,
+      "start_ms": 285960,
+      "end_ms": 288410,
+      "text": "右边是一乘二乘四等于八。"
+    },
+    {
+      "index": 113,
+      "slide": 19,
+      "start_ms": 288410,
+      "end_ms": 290010,
+      "text": "七不等于八，"
+    },
+    {
+      "index": 114,
+      "slide": 19,
+      "start_ms": 290010,
+      "end_ms": 292460,
+      "text": "因此这样的三角形不存在。"
+    },
+    {
+      "index": 115,
+      "slide": 20,
+      "start_ms": 292660,
+      "end_ms": 295300,
+      "text": "做完后请记住一种思考方式："
+    },
+    {
+      "index": 116,
+      "slide": 20,
+      "start_ms": 295300,
+      "end_ms": 297560,
+      "text": "先让几何条件限制角度，"
+    },
+    {
+      "index": 117,
+      "slide": 20,
+      "start_ms": 297560,
+      "end_ms": 299820,
+      "text": "再让函数性质限制数值，"
+    },
+    {
+      "index": 118,
+      "slide": 20,
+      "start_ms": 299820,
+      "end_ms": 302650,
+      "text": "最后利用整数条件缩小可能性。"
+    },
+    {
+      "index": 119,
+      "slide": 20,
+      "start_ms": 302650,
+      "end_ms": 304720,
+      "text": "你可以试着独立解释，"
+    },
+    {
+      "index": 120,
+      "slide": 20,
+      "start_ms": 304720,
+      "end_ms": 307740,
+      "text": "为什么最小角的正切一定等于一。"
+    }
+  ]
+}
