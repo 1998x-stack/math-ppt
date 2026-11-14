@@ -17,7 +17,11 @@ jobs:
         with:
           python-version: '3.11'
       - run: python -m pip install -r requirements.txt
-      - run: python -m pytest -q
+      - name: Install FFmpeg so audio tests run instead of being skipped
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - run: python -m pytest -q -rs
       - name: Build editable PPT, captions and timeline
         run: |
           python scripts/build.py --input examples/tangent-integer-triangle/lesson.json --out build

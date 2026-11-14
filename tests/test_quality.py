@@ -1,5 +1,4 @@
 """Negative and integration regression checks for the course production pipeline."""
-import copy
 import json
 import sys
 from pathlib import Path
@@ -60,6 +59,10 @@ def test_removed_visible_math_is_caught(tmp_path):
     assert any('missing visible content' in problem for problem in check(source,tmp_path))
 
 def test_retimenegative_pause(tmp_path):
-    from retime_tts import main
-    # CLI invalid arguments are checked at parse time: checked on GitHub build.
-    pass
+    import subprocess
+    p=subprocess.run([sys.executable,str(ROOT/'scripts/retime_tts.py'),
+      '--timeline',str(tmp_path/'none.json'), '--cue-audio-dir',str(tmp_path),
+      '--out',str(tmp_path/'out'),'--pause-ms','-5'],
+      text=True,capture_output=True)
+    assert p.returncode!=0
+    assert 'must be nonnegative' in p.stderr
